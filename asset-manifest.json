@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/itchio-bundle-racial-equality-randomizer/static/css/main.54d1bb2a.chunk.css",
+    "main.js": "/itchio-bundle-racial-equality-randomizer/static/js/main.d1335c94.chunk.js",
+    "main.js.map": "/itchio-bundle-racial-equality-randomizer/static/js/main.d1335c94.chunk.js.map",
+    "runtime-main.js": "/itchio-bundle-racial-equality-randomizer/static/js/runtime-main.8f4eca85.js",
+    "runtime-main.js.map": "/itchio-bundle-racial-equality-randomizer/static/js/runtime-main.8f4eca85.js.map",
+    "static/js/2.94621bc4.chunk.js": "/itchio-bundle-racial-equality-randomizer/static/js/2.94621bc4.chunk.js",
+    "static/js/2.94621bc4.chunk.js.map": "/itchio-bundle-racial-equality-randomizer/static/js/2.94621bc4.chunk.js.map",
+    "index.html": "/itchio-bundle-racial-equality-randomizer/index.html",
+    "precache-manifest.91ba0a06b469acd7201e30ab7a5ce98a.js": "/itchio-bundle-racial-equality-randomizer/precache-manifest.91ba0a06b469acd7201e30ab7a5ce98a.js",
+    "service-worker.js": "/itchio-bundle-racial-equality-randomizer/service-worker.js",
+    "static/css/main.54d1bb2a.chunk.css.map": "/itchio-bundle-racial-equality-randomizer/static/css/main.54d1bb2a.chunk.css.map",
+    "static/js/2.94621bc4.chunk.js.LICENSE.txt": "/itchio-bundle-racial-equality-randomizer/static/js/2.94621bc4.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/itchio-bundle-racial-equality-randomizer/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8f4eca85.js",
+    "static/js/2.94621bc4.chunk.js",
+    "static/css/main.54d1bb2a.chunk.css",
+    "static/js/main.d1335c94.chunk.js"
+  ]
+}
