@@ -10,7 +10,7 @@ function randomGame() {
   return data[index]
 }
 
-function GameView({game: game}) {
+function GameView({game: game, collapsed: collapsed}) {
   const page = game[0]
   const title = game[1]
   const category = game[5]
@@ -21,22 +21,40 @@ function GameView({game: game}) {
   const tags = game[27]
   const avgPlay = game[28]
 
-  return (
-    <div className="game">
-      <h1>{title}</h1>
-      <h4>{authors}</h4>
-      <div>{text}</div>
-      <div className="link"><a target="_blank" href={url}>{url}</a></div>
-    </div>
+  return collapsed ? (
+      <div className="game collapsed">
+        <div>{title}</div>
+        <div>{text}</div>
+        <div className="link"><a target="_blank" href={url}>{url}</a></div>
+      </div>
+    ) : (
+      <div className="game">
+        <h1>{title}</h1>
+        <h4>{authors}</h4>
+        <div>{text}</div>
+        <div className="link"><a target="_blank" href={url}>{url}</a></div>
+      </div>
   )
 }
 
+
+
 function App() {
   const [game, setGame] = React.useState(randomGame())
+  const [pastGames, setPastGames] = React.useState([])
+
+  function anotherGame() {
+    setPastGames([game].concat(pastGames))
+    setGame(randomGame())
+  }
+
   return (
     <div className="App">
       <GameView game={game} />
-      <button onClick={() => setGame(randomGame())}>Another!</button>
+      <button onClick={() => anotherGame()}>Another!</button>
+      <div>
+        { pastGames.map(pastGame => <GameView game={pastGame} collapsed={true}/> ) }
+      </div>
     </div>
   );
 }
